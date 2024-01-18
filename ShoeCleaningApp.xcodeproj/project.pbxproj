@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55C7116F2B57060300006767 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7116E2B57060300006767 /* ContentView.swift */; };
+		55C711732B57060400006767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C711722B57060400006767 /* Assets.xcassets */; };
+		55C711762B57060400006767 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C711752B57060400006767 /* Preview Assets.xcassets */; };
+		55C711802B57060400006767 /* ShoeCleaningAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7117F2B57060400006767 /* ShoeCleaningAppTests.swift */; };
+		55C7118A2B57060400006767 /* ShoeCleaningAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C711892B57060400006767 /* ShoeCleaningAppUITests.swift */; };
+		55C7118C2B57060400006767 /* ShoeCleaningAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7118B2B57060400006767 /* ShoeCleaningAppUITestsLaunchTests.swift */; };
+		55C711992B57062200006767 /* CleaningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C711982B57062200006767 /* CleaningService.swift */; };
+		55C7119B2B570C1A00006767 /* CustomersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7119A2B570C1A00006767 /* CustomersView.swift */; };
+		55C7119E2B570C5200006767 /* NewRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7119D2B570C5200006767 /* NewRecordView.swift */; };
+		55C711A22B570C6D00006767 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C711A12B570C6D00006767 /* ScheduleView.swift */; };
+		55C711B02B57154F00006767 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 55C711AF2B57154F00006767 /* SQLite */; };
+		55C711B22B57296300006767 /* EmployeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C711B12B57296300006767 /* EmployeesView.swift */; };
+		55C711B92B572CF300006767 /* ShoeCleaningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C711B82B572CF300006767 /* ShoeCleaningApp.swift */; };
+		55C711DB2B57650700006767 /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C711DA2B57650700006767 /* ClientManager.swift */; };
+		55C711DD2B57652200006767 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C711DC2B57652200006767 /* Employee.swift */; };
+		55FC0E8A2B585F71003F2089 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC0E892B585F71003F2089 /* Customer.swift */; };
+		55FC0E8F2B587675003F2089 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC0E8E2B587675003F2089 /* Item.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55C7117C2B57060400006767 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C711612B57060300006767 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C711682B57060300006767;
+			remoteInfo = ShoeCleaningApp;
+		};
+		55C711862B57060400006767 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C711612B57060300006767 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C711682B57060300006767;
+			remoteInfo = ShoeCleaningApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55490D102B5893CC00816A4C /* ShoeCleaningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ShoeCleaningApp.app; path = "/Users/andrey/Downloads/ShoeCleaningApp/build/Debug-iphoneos/ShoeCleaningApp.app"; sourceTree = "<absolute>"; };
+		55490D112B5893CC00816A4C /* ShoeCleaningAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShoeCleaningAppTests.xctest; path = "/Users/andrey/Downloads/ShoeCleaningApp/build/Debug-iphoneos/ShoeCleaningAppTests.xctest"; sourceTree = "<absolute>"; };
+		55490D122B5893CC00816A4C /* ShoeCleaningAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShoeCleaningAppUITests.xctest; path = "/Users/andrey/Downloads/ShoeCleaningApp/build/Debug-iphoneos/ShoeCleaningAppUITests.xctest"; sourceTree = "<absolute>"; };
+		55C7116E2B57060300006767 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		55C711722B57060400006767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55C711752B57060400006767 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		55C7117F2B57060400006767 /* ShoeCleaningAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCleaningAppTests.swift; sourceTree = "<group>"; };
+		55C711892B57060400006767 /* ShoeCleaningAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCleaningAppUITests.swift; sourceTree = "<group>"; };
+		55C7118B2B57060400006767 /* ShoeCleaningAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCleaningAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55C711982B57062200006767 /* CleaningService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningService.swift; sourceTree = "<group>"; };
+		55C7119A2B570C1A00006767 /* CustomersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersView.swift; sourceTree = "<group>"; };
+		55C7119D2B570C5200006767 /* NewRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecordView.swift; sourceTree = "<group>"; };
+		55C711A12B570C6D00006767 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		55C711B12B57296300006767 /* EmployeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesView.swift; sourceTree = "<group>"; };
+		55C711B82B572CF300006767 /* ShoeCleaningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCleaningApp.swift; sourceTree = "<group>"; };
+		55C711DA2B57650700006767 /* ClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
+		55C711DC2B57652200006767 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		55FC0E892B585F71003F2089 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		55FC0E8E2B587675003F2089 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55C711662B57060300006767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C711B02B57154F00006767 /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C711782B57060400006767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C711822B57060400006767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55C711602B57060300006767 = {
+			isa = PBXGroup;
+			children = (
+				55C711722B57060400006767 /* Assets.xcassets */,
+				55C7116B2B57060300006767 /* ShoeCleaningApp */,
+				55C7117E2B57060400006767 /* ShoeCleaningAppTests */,
+				55C711882B57060400006767 /* ShoeCleaningAppUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		55C7116B2B57060300006767 /* ShoeCleaningApp */ = {
+			isa = PBXGroup;
+			children = (
+				55C711D72B574FD700006767 /* Sql */,
+				55C7116E2B57060300006767 /* ContentView.swift */,
+				55C711B82B572CF300006767 /* ShoeCleaningApp.swift */,
+				55C711B72B572A6B00006767 /* Clients */,
+				55C711B62B572A5C00006767 /* Schedule */,
+				55C711B52B572A4200006767 /* Employees */,
+				55C711B32B572A2800006767 /* NewRecord */,
+				55C711742B57060400006767 /* Preview Content */,
+				55C711982B57062200006767 /* CleaningService.swift */,
+				55FC0E8E2B587675003F2089 /* Item.swift */,
+			);
+			path = ShoeCleaningApp;
+			sourceTree = "<group>";
+		};
+		55C711742B57060400006767 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				55C711752B57060400006767 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55C7117E2B57060400006767 /* ShoeCleaningAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				55C7117F2B57060400006767 /* ShoeCleaningAppTests.swift */,
+			);
+			path = ShoeCleaningAppTests;
+			sourceTree = "<group>";
+		};
+		55C711882B57060400006767 /* ShoeCleaningAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55C711892B57060400006767 /* ShoeCleaningAppUITests.swift */,
+				55C7118B2B57060400006767 /* ShoeCleaningAppUITestsLaunchTests.swift */,
+			);
+			path = ShoeCleaningAppUITests;
+			sourceTree = "<group>";
+		};
+		55C711B32B572A2800006767 /* NewRecord */ = {
+			isa = PBXGroup;
+			children = (
+				55C7119D2B570C5200006767 /* NewRecordView.swift */,
+			);
+			path = NewRecord;
+			sourceTree = "<group>";
+		};
+		55C711B52B572A4200006767 /* Employees */ = {
+			isa = PBXGroup;
+			children = (
+				55C711B12B57296300006767 /* EmployeesView.swift */,
+			);
+			path = Employees;
+			sourceTree = "<group>";
+		};
+		55C711B62B572A5C00006767 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				55C711A12B570C6D00006767 /* ScheduleView.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		55C711B72B572A6B00006767 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				55C7119A2B570C1A00006767 /* CustomersView.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		55C711D72B574FD700006767 /* Sql */ = {
+			isa = PBXGroup;
+			children = (
+				55C711DA2B57650700006767 /* ClientManager.swift */,
+				55C711DC2B57652200006767 /* Employee.swift */,
+				55FC0E892B585F71003F2089 /* Customer.swift */,
+			);
+			path = Sql;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55C711682B57060300006767 /* ShoeCleaningApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C7118F2B57060400006767 /* Build configuration list for PBXNativeTarget "ShoeCleaningApp" */;
+			buildPhases = (
+				55C711652B57060300006767 /* Sources */,
+				55C711662B57060300006767 /* Frameworks */,
+				55C711672B57060300006767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoeCleaningApp;
+			packageProductDependencies = (
+				55C711AF2B57154F00006767 /* SQLite */,
+			);
+			productName = ShoeCleaningApp;
+			productReference = 55490D102B5893CC00816A4C /* ShoeCleaningApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55C7117A2B57060400006767 /* ShoeCleaningAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C711922B57060400006767 /* Build configuration list for PBXNativeTarget "ShoeCleaningAppTests" */;
+			buildPhases = (
+				55C711772B57060400006767 /* Sources */,
+				55C711782B57060400006767 /* Frameworks */,
+				55C711792B57060400006767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55C7117D2B57060400006767 /* PBXTargetDependency */,
+			);
+			name = ShoeCleaningAppTests;
+			productName = ShoeCleaningAppTests;
+			productReference = 55490D112B5893CC00816A4C /* ShoeCleaningAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55C711842B57060400006767 /* ShoeCleaningAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C711952B57060400006767 /* Build configuration list for PBXNativeTarget "ShoeCleaningAppUITests" */;
+			buildPhases = (
+				55C711812B57060400006767 /* Sources */,
+				55C711822B57060400006767 /* Frameworks */,
+				55C711832B57060400006767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55C711872B57060400006767 /* PBXTargetDependency */,
+			);
+			name = ShoeCleaningAppUITests;
+			productName = ShoeCleaningAppUITests;
+			productReference = 55490D122B5893CC00816A4C /* ShoeCleaningAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55C711612B57060300006767 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					55C711682B57060300006767 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					55C7117A2B57060400006767 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 55C711682B57060300006767;
+					};
+					55C711842B57060400006767 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 55C711682B57060300006767;
+					};
+				};
+			};
+			buildConfigurationList = 55C711642B57060300006767 /* Build configuration list for PBXProject "ShoeCleaningApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55C711602B57060300006767;
+			packageReferences = (
+				55C711AE2B57154F00006767 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
+			productRefGroup = 55C711602B57060300006767;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55C711682B57060300006767 /* ShoeCleaningApp */,
+				55C7117A2B57060400006767 /* ShoeCleaningAppTests */,
+				55C711842B57060400006767 /* ShoeCleaningAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55C711672B57060300006767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C711762B57060400006767 /* Preview Assets.xcassets in Resources */,
+				55C711732B57060400006767 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C711792B57060400006767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C711832B57060400006767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55C711652B57060300006767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C7116F2B57060300006767 /* ContentView.swift in Sources */,
+				55FC0E8A2B585F71003F2089 /* Customer.swift in Sources */,
+				55C711B92B572CF300006767 /* ShoeCleaningApp.swift in Sources */,
+				55C711B22B57296300006767 /* EmployeesView.swift in Sources */,
+				55C711DD2B57652200006767 /* Employee.swift in Sources */,
+				55C7119B2B570C1A00006767 /* CustomersView.swift in Sources */,
+				55FC0E8F2B587675003F2089 /* Item.swift in Sources */,
+				55C7119E2B570C5200006767 /* NewRecordView.swift in Sources */,
+				55C711A22B570C6D00006767 /* ScheduleView.swift in Sources */,
+				55C711992B57062200006767 /* CleaningService.swift in Sources */,
+				55C711DB2B57650700006767 /* ClientManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C711772B57060400006767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C711802B57060400006767 /* ShoeCleaningAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C711812B57060400006767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C7118C2B57060400006767 /* ShoeCleaningAppUITestsLaunchTests.swift in Sources */,
+				55C7118A2B57060400006767 /* ShoeCleaningAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55C7117D2B57060400006767 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55C711682B57060300006767 /* ShoeCleaningApp */;
+			targetProxy = 55C7117C2B57060400006767 /* PBXContainerItemProxy */;
+		};
+		55C711872B57060400006767 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55C711682B57060300006767 /* ShoeCleaningApp */;
+			targetProxy = 55C711862B57060400006767 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		55C7118D2B57060400006767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55C7118E2B57060400006767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55C711902B57060400006767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShoeCleaningApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diplom.ShoeCleaningApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55C711912B57060400006767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShoeCleaningApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diplom.ShoeCleaningApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55C711932B57060400006767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diplom.ShoeCleaningAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoeCleaningApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShoeCleaningApp";
+			};
+			name = Debug;
+		};
+		55C711942B57060400006767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diplom.ShoeCleaningAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoeCleaningApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShoeCleaningApp";
+			};
+			name = Release;
+		};
+		55C711962B57060400006767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diplom.ShoeCleaningAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShoeCleaningApp;
+			};
+			name = Debug;
+		};
+		55C711972B57060400006767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diplom.ShoeCleaningAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShoeCleaningApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55C711642B57060300006767 /* Build configuration list for PBXProject "ShoeCleaningApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C7118D2B57060400006767 /* Debug */,
+				55C7118E2B57060400006767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C7118F2B57060400006767 /* Build configuration list for PBXNativeTarget "ShoeCleaningApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C711902B57060400006767 /* Debug */,
+				55C711912B57060400006767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C711922B57060400006767 /* Build configuration list for PBXNativeTarget "ShoeCleaningAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C711932B57060400006767 /* Debug */,
+				55C711942B57060400006767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C711952B57060400006767 /* Build configuration list for PBXNativeTarget "ShoeCleaningAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C711962B57060400006767 /* Debug */,
+				55C711972B57060400006767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55C711AE2B57154F00006767 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55C711AF2B57154F00006767 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55C711AE2B57154F00006767 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 55C711612B57060300006767 /* Project object */;
+}
