@@ -33,7 +33,6 @@ struct EmployeesView: View {
                     }
                 }
             }
-
             // Форма для добавления нового сотрудника
             HStack {
                 TextField("Имя", text: $firstName)

@@ -7,6 +7,7 @@
 
 import XCTest
 
+
 final class ShoeCleaningAppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {

@@ -68,7 +68,8 @@ class ClientManager: ObservableObject {
     func removeCustomer(_ customer: Customer) {
             if let index = customers.firstIndex(of: customer) {
                 customers.remove(at: index)
-                saveCustomersData() // Сохраняем обновленные данные после удаления
+                saveCustomersData() 
+                // Сохраняем обновленные данные после удаления
             }
         }
         
@@ -78,7 +79,7 @@ class ClientManager: ObservableObject {
                 let decoder = JSONDecoder()
                 if let decodedData = try? decoder.decode([Customer].self, from: data) {
                     customers = decodedData
-                }
             }
         }
+    }
 }

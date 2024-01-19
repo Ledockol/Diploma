@@ -53,7 +53,6 @@ struct NewRecordView: View {
                 }
             }
             .padding()
-
             Button(action: {
                 let newCustomer = Customer(firstName: customerFirstName,
                                            lastName: customerLastName,

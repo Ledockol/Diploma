@@ -13,7 +13,6 @@ class CleaningService {
     func addShoe(_ shoe: String) {
         shoes.append(shoe)
     }
-
     func cleanShoes() {
         print("Cleaning shoes: \(shoes.joined(separator: ", "))")
     }

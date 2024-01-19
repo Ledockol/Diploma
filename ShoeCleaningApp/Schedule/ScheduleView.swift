@@ -75,6 +75,7 @@ struct MyScheduleView: View {
             }
         }
         .onAppear {
+            
             // Загружаем сохраненные цвета при появлении представления
             clientManager.loadCellColors()
         }

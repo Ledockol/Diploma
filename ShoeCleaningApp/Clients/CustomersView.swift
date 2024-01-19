@@ -31,27 +31,7 @@ struct CustomersView: View {
                     }
                 }
             }
-//
-//
-//            HStack {
-//                TextField("Имя", text: $firstName)
-//                    .textFieldStyle(RoundedBorderTextFieldStyle())
-//                TextField("Фамилия", text: $lastName)
-//                    .textFieldStyle(RoundedBorderTextFieldStyle())
-//                TextField("Телефон", text: $phone)
-//                    .textFieldStyle(RoundedBorderTextFieldStyle())
-//
-//                Button(action: {
-//                    let newCustomer = Customer(firstName: firstName, lastName: lastName, phone: phone, services: [])
-//                                    clientManager.customers.append(newCustomer)
-//                                    clientManager.saveCustomersData() // Сохраняем данные при добавлении сотрудника
-//                                    firstName = ""
-//                                    lastName = ""
-//                                    phone = ""
-//                                }) {
-//                                    Text("Добавить")
-//                                }
-//                            }
+
                             .padding()
 
                             Spacer()

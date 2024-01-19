@@ -13,6 +13,7 @@ struct ShoeCleaningAppApp: App {
         let schema = Schema([
             Item.self,
         ])
+        
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {

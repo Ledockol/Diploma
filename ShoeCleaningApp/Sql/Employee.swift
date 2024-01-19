@@ -13,4 +13,3 @@ struct Employee: Identifiable, Hashable, Codable {
     var lastName: String
     var position: String
 }
-
