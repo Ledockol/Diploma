@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//Структура сотрудников
 struct Employee: Identifiable, Hashable, Codable {
     var id = UUID()
     var firstName: String

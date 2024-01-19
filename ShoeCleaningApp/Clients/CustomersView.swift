@@ -18,26 +18,26 @@ struct CustomersView: View {
             Text("Клиенты")
                 .font(.title)
                 .padding()
-            
+            //Список клиентов
             List {
-                            ForEach(clientManager.customers) { customer in
-                                HStack {
-                                    Text("\(customer.firstName) \(customer.lastName), \(customer.phone)")
-                                    Spacer()
-                                    Button(action: {
-                                        clientManager.removeCustomer(customer) // Вызываем метод удаления
-                                    }) {
-                                        Image(systemName: "trash")                        }
+                ForEach(clientManager.customers) { customer in
+                    HStack {
+                        Text("\(customer.firstName) \(customer.lastName), \(customer.phone)")
+                        Spacer()
+                        Button(action: {
+                            clientManager.removeCustomer(customer)
+                        }) {
+                            Image(systemName: "trash")                        }
                     }
                 }
             }
-
-                            .padding()
-
-                            Spacer()
-                        }
-                        .onAppear {
-                            clientManager.loadCustomersData()
+            
+            .padding()
+            
+            Spacer()
+        }
+        .onAppear {
+            clientManager.loadCustomersData()
         }
     }
 }

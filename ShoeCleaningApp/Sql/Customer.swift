@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//Структура клиента
 struct Customer: Identifiable, Hashable, Codable {
     var id = UUID()
     var firstName: String

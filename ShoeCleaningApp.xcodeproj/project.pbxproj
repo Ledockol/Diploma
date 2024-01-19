@@ -44,9 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		55490D102B5893CC00816A4C /* ShoeCleaningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ShoeCleaningApp.app; path = "/Users/andrey/Downloads/ShoeCleaningApp/build/Debug-iphoneos/ShoeCleaningApp.app"; sourceTree = "<absolute>"; };
-		55490D112B5893CC00816A4C /* ShoeCleaningAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShoeCleaningAppTests.xctest; path = "/Users/andrey/Downloads/ShoeCleaningApp/build/Debug-iphoneos/ShoeCleaningAppTests.xctest"; sourceTree = "<absolute>"; };
-		55490D122B5893CC00816A4C /* ShoeCleaningAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShoeCleaningAppUITests.xctest; path = "/Users/andrey/Downloads/ShoeCleaningApp/build/Debug-iphoneos/ShoeCleaningAppUITests.xctest"; sourceTree = "<absolute>"; };
 		55C7116E2B57060300006767 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		55C711722B57060400006767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55C711752B57060400006767 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -61,6 +58,9 @@
 		55C711B82B572CF300006767 /* ShoeCleaningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCleaningApp.swift; sourceTree = "<group>"; };
 		55C711DA2B57650700006767 /* ClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
 		55C711DC2B57652200006767 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		55DC04F12B5B120400BDF7E4 /* ShoeCleaningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ShoeCleaningApp.app; path = "/Users/andrey/Downloads/Telegram Archive/build/Debug-iphoneos/ShoeCleaningApp.app"; sourceTree = "<absolute>"; };
+		55DC04F22B5B120400BDF7E4 /* ShoeCleaningAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShoeCleaningAppTests.xctest; path = "/Users/andrey/Downloads/Telegram Archive/build/Debug-iphoneos/ShoeCleaningAppTests.xctest"; sourceTree = "<absolute>"; };
+		55DC04F32B5B120400BDF7E4 /* ShoeCleaningAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ShoeCleaningAppUITests.xctest; path = "/Users/andrey/Downloads/Telegram Archive/build/Debug-iphoneos/ShoeCleaningAppUITests.xctest"; sourceTree = "<absolute>"; };
 		55FC0E892B585F71003F2089 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		55FC0E8E2B587675003F2089 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,7 +205,7 @@
 				55C711AF2B57154F00006767 /* SQLite */,
 			);
 			productName = ShoeCleaningApp;
-			productReference = 55490D102B5893CC00816A4C /* ShoeCleaningApp.app */;
+			productReference = 55DC04F12B5B120400BDF7E4 /* ShoeCleaningApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		55C7117A2B57060400006767 /* ShoeCleaningAppTests */ = {
@@ -223,7 +223,7 @@
 			);
 			name = ShoeCleaningAppTests;
 			productName = ShoeCleaningAppTests;
-			productReference = 55490D112B5893CC00816A4C /* ShoeCleaningAppTests.xctest */;
+			productReference = 55DC04F22B5B120400BDF7E4 /* ShoeCleaningAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		55C711842B57060400006767 /* ShoeCleaningAppUITests */ = {
@@ -241,7 +241,7 @@
 			);
 			name = ShoeCleaningAppUITests;
 			productName = ShoeCleaningAppUITests;
-			productReference = 55490D122B5893CC00816A4C /* ShoeCleaningAppUITests.xctest */;
+			productReference = 55DC04F32B5B120400BDF7E4 /* ShoeCleaningAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */

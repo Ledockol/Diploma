@@ -8,7 +8,7 @@ import SwiftUI
 @main
 struct YourApp: App {
     @StateObject private var clientManager = ClientManager()
-
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -19,31 +19,31 @@ struct YourApp: App {
 
 struct ContentView: View {
     @EnvironmentObject var clientManager: ClientManager
-
+    
     var body: some View {
         NavigationView {
             VStack {
                 Text("Химчистка обуви")
                     .font(.title)
                     .padding(.top, 50)
-
+                
                 Spacer()
-
+                
                 NavigationLink(destination: CustomersView(clientManager: clientManager)) {
-                MenuButton(title: "Клиенты")
+                    MenuButton(title: "Клиенты")
                 }
-
+                
                 NavigationLink(destination: NewRecordView(clientManager: clientManager).environmentObject(clientManager)) {
-                                    MenuButton(title: "Новая запись")
-                                }
-                NavigationLink(destination: EmployeesView(clientManager: clientManager)) {
-                MenuButton(title: "Сотрудники")
+                    MenuButton(title: "Новая запись")
                 }
-
+                NavigationLink(destination: EmployeesView(clientManager: clientManager)) {
+                    MenuButton(title: "Сотрудники")
+                }
+                
                 NavigationLink(destination: MyScheduleView().environmentObject(clientManager)) {
-                                MenuButton(title: "Расписание")
-                            }
-
+                    MenuButton(title: "Расписание")
+                }
+                
                 Spacer()
             }
             .padding()
@@ -55,7 +55,7 @@ struct ContentView: View {
 
 struct MenuButton: View {
     var title: String
-
+    
     var body: some View {
         Text(title)
             .frame(width: 200, height: 50)
