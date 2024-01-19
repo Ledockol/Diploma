@@ -5,16 +5,16 @@
 //  Created by Андрей Беседин on 16.01.2024.
 //
 
-import Foundation
+// import Foundation
 
-class CleaningService {
-    var shoes: [String] = []
+// class CleaningService {
+//     var shoes: [String] = []
 
-    func addShoe(_ shoe: String) {
-        shoes.append(shoe)
-    }
+//     func addShoe(_ shoe: String) {
+//         shoes.append(shoe)
+//     }
 
-    func cleanShoes() {
-        print("Cleaning shoes: \(shoes.joined(separator: ", "))")
-    }
-}
+//     func cleanShoes() {
+//         print("Cleaning shoes: \(shoes.joined(separator: ", "))")
+//     }
+// }
